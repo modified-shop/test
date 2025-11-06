@@ -16,7 +16,7 @@ function createEmailMessage(): string
     $message .= "Ein mutiger Admin hat gerade auf einen mysteriösen Button geklickt...\n\n";
     $message .= "🎪 Witz des Tages:\n";
     $message .= "Letzter Wunsch des Programmierers:\n";
-    $message .= "Bitte ein Bit. 🐛🐛🐛\n\n";
+    $message .= "Bitte ein Bit. 🍺🍺🍺\n\n";
     $message .= "Mit freundlichen Grüßen,\n";
     $message .= "Ihr automatisiertes E-Mail-System\n\n";
     $message .= "P.S.: Diese E-Mail wurde am " . date('d.m.Y \u\m H:i:s') . " Uhr versendet.\n";
