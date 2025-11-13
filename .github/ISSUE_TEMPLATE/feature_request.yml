@@ -1,0 +1,27 @@
+name: Feature Request
+description: Schlage eine neue Funktion oder Verbesserung vor
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Use-Case
+      description: Welches Problem löst dein Vorschlag?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Vorgeschlagene Lösung
+      description: Wie soll modified sich verhalten?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Lösungen
+      description: Welche Alternativen hast du schon überlegt?
+    validations:
+      required: false

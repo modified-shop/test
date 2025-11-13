@@ -1,0 +1,54 @@
+name: Bug Report
+description: Melde einen Fehler im modified Shop System
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deinen Bugreport. Bitte fülle die Felder so genau wie möglich aus.
+
+  - type: input
+    id: version
+    attributes:
+      label: modified Version
+      description: Welche modified-Version verwendest du? (z. B. 3.1.0)
+      placeholder: "3.1.x"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Umgebung
+      description: PHP-Version, Datenbank, Betriebssystem, Webserver
+      placeholder: "PHP 8.2, MySQL 8, Apache 2.4, Debian 12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      description: Schreibe die Schritte, um den Fehler nachzustellen.
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hättest du erwartet?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Tatsächliches Verhalten
+      description: Was passiert stattdessen? (Fehlermeldungen, Screenshots)
+    validations:
+      required: true
