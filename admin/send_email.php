@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// MailSender-Klasse einbinden
-require_once __DIR__ . '/../includes/MailSender.php';
-
 use App\Service\MailSender;
 
 /**
