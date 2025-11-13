@@ -30,4 +30,4 @@ jobs:
       # admin/*.php = Prüft alle PHP-Dateien im admin-Ordner
       # includes/*.php = Prüft alle PHP-Dateien im includes-Ordner
       - name: Check PHP Code Style (PSR-12)
-        run: phpcs --standard=PSR12 --runtime-set ignore_warnings_on_exit 1 *.php admin/*.php includes/*.php
+        run: phpcs --standard=PSR12 *.php admin/*.php includes/*.php
