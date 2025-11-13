@@ -1,0 +1,33 @@
+# Name der GitHub Action, der im Actions-Tab angezeigt wird
+name: PHP Code Style
+
+# Trigger: Wird bei jedem Push zu einem Pull Request ausgeführt
+on:
+  pull_request:
+    branches: [ main ]  # Nur PRs zum main-Branch
+
+jobs:
+  phpcs:
+    runs-on: ubuntu-latest  # Ubuntu Linux Container
+    
+    steps:
+      # Schritt 1: Code aus dem Repository laden
+      # Hier verwenden wir eine vorgefertigte Action von GitHub
+      - uses: actions/checkout@v4
+      
+      # Schritt 2: PHP installieren und phpcs einrichten
+      # Hier verwenden wir eine vorgefertigte Action von shivammathur
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'  # PHP Version
+          tools: phpcs        # PHP CodeSniffer installieren
+      
+      # Schritt 3: Code-Style prüfen mit PSR-12 Standard
+      # phpcs = PHP CodeSniffer prüft den Code auf Style-Fehler
+      # --standard=PSR12 = Verwendet den PSR-12 Coding Standard
+      # *.php = Prüft alle PHP-Dateien im Hauptverzeichnis
+      # admin/*.php = Prüft alle PHP-Dateien im admin-Ordner
+      # includes/*.php = Prüft alle PHP-Dateien im includes-Ordner
+      - name: Check PHP Code Style (PSR-12)
+        run: phpcs --standard=PSR12 *.php admin/*.php includes/*.php
