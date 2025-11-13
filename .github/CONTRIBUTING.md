@@ -25,7 +25,7 @@ Vielen Dank, dass du zu modified-shop beitragen möchtest. Dieses Dokument soll 
 - Stelle die Issue Nummer vorne an, wenn sich der Branch auf ein Issue bezieht.
 - Ein PR sollte sich auf **ein** Thema konzentrieren.
 - Für größere Änderungen:
-  - Vorher eine Issue erstellen und diskutieren, bevor ein PR erstellt wird.
+  - Vorher einen Issue erstellen und diskutieren, bevor ein PR erstellt wird.
 
 ## 4. Welche Art von PRs akzeptieren wir?
 
