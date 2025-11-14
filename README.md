@@ -21,4 +21,14 @@ git push                # Zum Remote-Repository pushen
 git pull                # Änderungen holen
 ```
 
+## 🥳 Git Online Browser Game
+Wer ein paar Git Grundlagen lernen oder auffrischen möchte, für den ist folgendes
+Browser Online Game etwas. In diesem Spiel kann man Git in kleinen Schritten spielerisch lernen.
+
+- kein Download
+- keine Anmeldung
+- kostenlos
+
+[learngitbranching.js.org DE](https://learngitbranching.js.org/?locale=de_DE)
+
 *Einfach mal ausprobieren! 🧪*
