@@ -25,7 +25,7 @@ git pull                # Änderungen holen
 Wer ein paar Git Grundlagen lernen oder auffrischen möchte, für den ist folgendes
 Browser Online Game etwas. In diesem Spiel kann man Git in kleinen Schritten spielerisch lernen.
 
-- Kein Download,
+- kein Download
 - keine Anmeldung
 - kostenlos
 
