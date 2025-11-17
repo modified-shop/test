@@ -14,11 +14,13 @@ Dieses Repository dient dazu, sich mit Git-Befehlen und GitHub-Features vertraut
 ## 🚀 Nützliche Git-Befehle
 
 ```bash
+git clone               # Repository klonen
 git status              # Aktueller Status
 git add .               # Alle Änderungen hinzufügen
+git add <file>          # Spezifische Änderungen hinzufügen
 git commit -m "Message" # Commit erstellen
+git pull                # Änderungen holen und (default) HEAD mergen
 git push                # Zum Remote-Repository pushen
-git pull                # Änderungen holen
 ```
 
 ## 🥳 Git Online Browser Game
