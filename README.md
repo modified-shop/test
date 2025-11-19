@@ -60,3 +60,8 @@ Browser Online Game etwas. In diesem Spiel kann man Git in kleinen Schritten spi
 [learngitbranching.js.org DE](https://learngitbranching.js.org/?locale=de_DE)
 
 *Einfach mal ausprobieren! 🧪*
+
+## 🤝 Wir freuen uns über deine Hilfe!
+Wir schätzen jede Art von Unterstützung. Ob du Code schreibst, die Doku verbesserst, ein neues Feature vorschlägst oder einen Bug meldest – dein Input zählt. 
+
+Wirf einen Blick in unsere [Guidelines](.github/CONTRIBUTING.md) für Mitwirkende, um loszulegen.
