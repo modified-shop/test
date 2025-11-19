@@ -30,4 +30,4 @@ jobs:
       # admin/*.php = Prüft alle PHP-Dateien im admin-Ordner
       # includes/*.php = Prüft alle PHP-Dateien im includes-Ordner
       - name: Check PHP Code Style (PSR-12)
-        run: phpcs --standard=PSR12 *.php admin/*.php includes/*.php
+        run: phpcs --standard=phpcs.xml.dist *.php admin/*.php includes/*.php
