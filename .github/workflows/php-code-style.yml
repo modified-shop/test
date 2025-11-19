@@ -21,7 +21,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.4'  # PHP Version
-          tools: php-cs-fixer # PHP-CS-Fixer installieren
+          tools: phpcs        # PHP CodeSniffer installieren
       
       # Schritt 3: Code-Style prüfen mit PSR-12 Standard
       # phpcs = PHP CodeSniffer prüft den Code auf Style-Fehler
@@ -30,4 +30,4 @@ jobs:
       # admin/*.php = Prüft alle PHP-Dateien im admin-Ordner
       # includes/*.php = Prüft alle PHP-Dateien im includes-Ordner
       - name: Check PHP Code Style (PSR-12)
-        run: php-cs-fixer fix --config=.php-cs-fixer.dist.php --show-progress=none --diff --dry-run
+        run: phpcs --standard=PSR12 *.php admin/*.php includes/*.php
