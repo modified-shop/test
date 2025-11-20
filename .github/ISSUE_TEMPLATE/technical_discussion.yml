@@ -1,0 +1,91 @@
+name: Technical Discussion
+description: Diskutiere technische Entwickler-Themen wie Tools, Standards oder Architekturentscheidungen
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dieses Template hilft dabei, technische Ideen strukturiert zu besprechen (z. B. Tooling, Coding-Standards, Architekturentscheidungen oder Programmiertechniken). Bitte beantworte die Fragen so konkret wie möglich.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Thema
+      description: Kurzer Titel, der die Diskussion beschreibt.
+      placeholder: "z. B. Neuen Static-Analyzer evaluieren"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Themenbereich
+      options:
+        - Tooling / Infrastruktur
+        - Coding-Standards / Guidelines
+        - Architektur / Design
+        - Performance / Skalierung
+        - Wissensaustausch / Best Practices
+        - Sonstiges
+    validations:
+      required: false
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Ausgangslage & Motivation
+      description: Welche Situation oder welches Problem adressierst du? Welche Ziele verfolgst du?
+      placeholder: |
+        - Aktueller Zustand
+        - Limitierungen oder Risiken
+        - Warum jetzt?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Vorschlag / Diskussionspunkte
+      description: Beschreibe den konkreten Vorschlag oder die offenen Fragen, die du diskutieren möchtest.
+      placeholder: |
+        - Idee oder Lösungsansatz
+        - Alternativen
+        - Offene Punkte, über die entschieden werden soll
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Auswirkungen & betroffene Bereiche
+      description: Welche Teams, Komponenten oder Workflows wären betroffen? Welche Chancen oder Risiken siehst du?
+      placeholder: |
+        - Auswirkungen auf Entwickler-Experience
+        - Einfluss auf Build-/Deploy-Prozesse
+        - Risiken bei Nicht-Umsetzung
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Referenzen & Materialien
+      description: Links zu Dokumentation, RFCs, Proof-of-Concepts oder relevanten Diskussionen.
+      placeholder: |
+        - RFC-Docs
+        - Benchmarks
+        - Vergleichsstudien
+    validations:
+      required: false
+
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Erwartete Entscheidungen / Nächste Schritte
+      description: Was benötigst du vom Team (z. B. Feedback, Entscheidung, Experiment)? Gibt es einen gewünschten Zeitrahmen?
+      placeholder: |
+        - Benötigtes Feedback
+        - Vorschlag für Vorgehen
+        - Deadline oder Release-Bezug
+    validations:
+      required: false
