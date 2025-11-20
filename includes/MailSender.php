@@ -49,7 +49,7 @@ class MailSender
     private function buildHeaders(string $from): string
     {
         $headers = "From: $from\r\n";
-        $headers .= "Content-Type: text/plain; charset={$this->charset}\r\n";
+        $headers .= "Content-Type: text/plain; charset=$this->charset\r\n";
         return $headers;
     }
 
